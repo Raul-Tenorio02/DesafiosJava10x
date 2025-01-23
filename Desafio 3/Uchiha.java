@@ -1,4 +1,4 @@
-package NivelIntermediario.Desafios2.Heranca;
+package NivelIntermediario.Desafio3;
 
 public class Uchiha extends Ninja{
 

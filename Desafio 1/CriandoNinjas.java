@@ -1,4 +1,4 @@
-package NivelBasico.Desafios;
+package NivelBasico.Desafio1;
 
 public class CriandoNinjas {
     public static void main(String[] args) {

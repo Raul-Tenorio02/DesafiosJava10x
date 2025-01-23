@@ -19,6 +19,7 @@ public class Main {
             System.out.println("1. Cadastrar Ninja");
             System.out.println("2. Listar Ninjas");
             System.out.println("3. Sair");
+            System.out.println("4. Atualizar Habilidades Especiais");
             System.out.print("Escolha uma opção: ");
             escolha = scanner.nextInt();
             scanner.nextLine();
@@ -84,6 +85,23 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Xi, já vai? Até logo!");
+                    break;
+                case 4:
+                    System.out.println("\n=====Atualizar Habilidades Especiais=====");
+                    System.out.print("Digite o índice do Ninja que você deseja atualizar a habilidade (começando por 0): ");
+                    int indiceNinja = scanner.nextInt();
+                    scanner.nextLine();
+
+                    if (indiceNinja >= 0 && indiceNinja < ninja.length && ninja[indiceNinja] != null){
+                        if (ninja[indiceNinja] instanceof HabilidadesEspeciais){
+                            HabilidadesEspeciais habilidadeEspecial = (HabilidadesEspeciais) ninja[indiceNinja];
+                            habilidadeEspecial.AtualizarHabilidadeEspecial();
+                        } else {
+                            System.out.println("Esse ninja não tem habilidades especiais.");
+                        }
+                    } else {
+                        System.out.println("Índice inválido. Digite novamente.");
+                    }
                     break;
                 default:
                     System.out.println("Entrada invalida. Tente novamente.");

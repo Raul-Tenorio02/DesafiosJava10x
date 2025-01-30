@@ -23,6 +23,8 @@ public abstract class ContaBancaria implements Conta, BancoDeKonoha {
             saldo -= valor;
             System.out.println("\nRealizando transferência...");
             contaDestinatario.depositar(valor);
+        } else {
+            System.out.println("\nVocê não tem esse valor para transferir.");
         }
     }
 

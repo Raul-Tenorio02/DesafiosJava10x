@@ -1,8 +1,8 @@
-**SISTEMA DE INVENTARIO DE NINJAS**
+**SISTEMAS DE INVENTARIO DE NINJAS**
 
-Projeto voltado a prática de lógica de programação orientada a objetos utilizando Java, proposto pelo curso Java10x.
+Esse repositório contém programas criados a partir dos desafios propostos na seção "Batismo de Java" do curso Java10x. 
 
 **FUNCIONALIDADES**
 
-Listagem e cadastro de ninjas, atualização de habilidades e categorização de tipos de habilidades. 
-
+Listagem, adição e remoção de ninjas e suas características. 
+Categorização e atualização de informações.
